@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Coder Eatery</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+	<header>
+		<nav class="purple lighten-2 z-depth-2">
+		 	<div class='container'>
+				<div class="nav-wrapper">
+				  <a href="/" class="brand-logo">CoderEatery</a>
+				  <ul class='right'> 	
+				  	<%= active_link "Home", root_path %>
+		   			<%= active_link "Contact Us", contact_path %>
+				  </ul> 
+			 	</div> 
+			 </div>
+		</nav>
+	</header>
+	<section>
+		<div class = "container">
+			<%= yield %>
+		</div>		
+	</section>	
+	
+<footer class="page-footer purple">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">Introduction</h5>
+          <p class="grey-text text-lighten-4">We are a team of coding-chef...</p>
+        </div>     
+    	</div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+      Made by <a class="orange-text text-lighten-3" href="/">CoderEatery</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

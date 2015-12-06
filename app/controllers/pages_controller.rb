@@ -1,7 +1,7 @@
 class PagesController < ApplicationController
-  def home
+  def home  	
   end
 
-  def contact
+  def contact  	
   end
 end

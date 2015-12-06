@@ -1,0 +1,54 @@
+<p id="notice"><%= notice %></p>
+<nav class ="purple accent-1">
+  <ul class="left hide-on-med-and-down">
+    <li><%= link_to "All Dishes", food_items_path %></li>
+    <li><%= link_to 'Breakfast', {controller: 'food_items', action: 'index', :section => 'Breakfast'}  %></li>
+    <li><%= link_to 'Lunch', {controller: 'food_items', action: 'index', :section => 'Lunch'}  %></li>
+    <li><%= link_to 'Dinner', {controller: 'food_items', action: 'index', :section => 'Dinner'}  %></li>
+    <li><%= link_to 'Drinks', {controller: 'food_items', action: 'index', :section => 'Drinks'}  %></li>
+
+  </ul>
+  <ul id="slide-out" class="side-nav">
+    <li><%= link_to 'Breakfast', {controller: 'food_items', action: 'index', :section => 'Breakfast'}  %></li>
+    <li><%= link_to 'Lunch', {controller: 'food_items', action: 'index', :section => 'Lunch'}  %></li>
+    <li><%= link_to 'Dinner', {controller: 'food_items', action: 'index', :section => 'Dinner'}  %></li>
+    <li><%= link_to 'Drinks', {controller: 'food_items', action: 'index', :section => 'Drinks'}  %></li>
+  </ul>
+  <a href="#" data-activates="slide-out" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+</nav>
+
+
+    <table class="striped">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+        <th>Price</th>
+        <th>Section</th>
+        <th>Picture</th>        
+      </tr>
+    </thead>
+
+    <tbody>
+      <% @food_items.each do |food_item| %>
+        <tr>
+          <td><%= food_item.name %></td>
+          <td><%= food_item.description %></td>
+          <td><%= food_item.price %></td>
+          <td><%= food_item.section %></td>
+          <td><%= image_tag food_item.imgurl %></td>
+         <!--  <td><%= link_to 'Show', food_item %></td>
+          <td><%= link_to 'Edit', edit_food_item_path(food_item) %></td>
+          <td><%= link_to 'Destroy', food_item, method: :delete, data: { confirm: 'Are you sure?' } %></td> -->
+        </tr>
+      <% end %>
+    </tbody>
+  </table>  
+ 
+  
+
+
+
+<br>
+
+<%= link_to 'New Food item', new_food_item_path %>

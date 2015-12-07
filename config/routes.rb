@@ -1,5 +1,10 @@
 Rails.application.routes.draw do
+  
   resources :food_items
+  resources :orders
+  resources :food_items do
+    resources :orders
+  end
   get 'pages/home'
 
   get 'contact' => "pages#contact"

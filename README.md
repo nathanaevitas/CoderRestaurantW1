@@ -33,15 +33,15 @@ The following **required** functionality is complete:
 * [x] The User can sort menu items by “alphabetical”, “price low to high”, and “price high to low”.
 * [x] The User should be able to get for a menu item and see results.
 * [x] Clicking on an item in the menu brings up its detail, where you see the description and a larger picture.
-* [] The User can click “order” on a menu item to go to a “Create Order” page. => i have done this yet I've got bug with it
-* [] The User is able to fill in their name, phone number, and address. => i have done this yet I've got bug with it
-* [] The User is taken to a “Thank you for your order page” that lists the name of item, the total cost (delivery should cost 20,000 VND), the user’s name, the user’s address, and the time the order was created in human-readable format (for example, Tuesday, December 1, 15:25).
+* [x] The User can click “order” on a menu item to go to a “Create Order” page. 
+* [x] The User is able to fill in their name, phone number, and address.
+* [] The User is taken to a “Thank you for your order page” that lists the name of item, the total cost (delivery should cost 20,000 VND), the user’s name, the user’s address, and the time the order was created in human-readable format (for example, Tuesday, December 1, 15:25). ==> this is partially done
 
 ## Video Walkthrough 
 
 Here's a walkthrough of implemented user stories:
 
-![Video Walkthrough](http://myphamdongy.net/appdemo.gif)
+![Video Walkthrough](http://myphamdongy.net/appdemo2.gif)
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 

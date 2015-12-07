@@ -32,7 +32,7 @@
     <tbody>
       <% @food_items.each do |food_item| %>
         <tr>
-          <td><%= food_item.name %></td>
+          <td><%= link_to food_item.name,food_item %></td>
           <td><%= food_item.description %></td>
           <td><%= number_to_currency food_item.price, unit: "đ " %></td>
           <td><%= food_item.section %></td>
@@ -44,11 +44,3 @@
       <% end %>
     </tbody>
   </table>  
- 
-  
-
-
-
-<br>
-
-<%= link_to 'New Food item', new_food_item_path %>

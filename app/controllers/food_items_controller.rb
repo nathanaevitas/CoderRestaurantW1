@@ -1,5 +1,5 @@
 class FoodItemsController < ApplicationController 
-  helper_method :sort_column, :sort_direction 
+  helper_method :sort_column, :sort_direction, :sort_section 
   before_action :set_food_item, only: [:show, :edit, :update, :destroy]
   
   # GET /food_items
@@ -7,7 +7,7 @@ class FoodItemsController < ApplicationController
   def index
     @food_items = FoodItem.where(nil)
     @food_items = @food_items.section(params[:section]) if params[:section].present?
-    @food_items = FoodItem.order(sort_column + ' ' + sort_direction)
+    @food_items = @food_items.order(sort_column + ' ' + sort_direction)
     # @food_items = @food_items.azorder if params["az"].present?
     # # @food_items = @food_items.low2highprice
     # @food_items = @food_items.high2low if params["h2l"].present?
@@ -85,5 +85,9 @@ class FoodItemsController < ApplicationController
 
     def sort_direction
       %w[desc asc].include?(params[:direction]) ? params[:direction] : "asc"      
+    end
+
+    def sort_section
+      %w[Breakfast Lunch Dinner Drinks].include?(params[:section]) ? params[:section] : nil      
     end
 end

@@ -36,11 +36,11 @@ five:
   imgurl: "http://loremflickr.com/320/240/breadandeggs"
 
 six:
-  name: "Bread with Egg"
-  description: "Classic bread with eggs for better price"
-  price: 35000
+  name: "Bread with Pork"
+  description: "Classic bread with pork cooked in HongKong style"
+  price: 70000
   section: "Breakfast"
-  imgurl: "http://loremflickr.com/320/240/breadandeggs"
+  imgurl: "http://loremflickr.com/320/240/breadandpork"
 #lunch
 seven:
   name: "Croque Monsieur"

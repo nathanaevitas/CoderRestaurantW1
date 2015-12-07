@@ -6,7 +6,7 @@ class FoodItemsController < ApplicationController
   # GET /food_items.json
   def index
     @food_items = FoodItem.where(nil)
-    @food_items = @food_items.section(params[:section]) if params[:section].present?
+    @food_items = @food_items.section(sort_section) unless sort_section == ""
     @food_items = @food_items.order(sort_column + ' ' + sort_direction)
     # @food_items = @food_items.azorder if params["az"].present?
     # # @food_items = @food_items.low2highprice
@@ -88,6 +88,6 @@ class FoodItemsController < ApplicationController
     end
 
     def sort_section
-      %w[Breakfast Lunch Dinner Drinks].include?(params[:section]) ? params[:section] : nil      
+      %w[Breakfast Lunch Dinner Drinks].include?(params[:section]) ? params[:section] : ""      
     end
 end

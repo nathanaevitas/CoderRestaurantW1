@@ -1,29 +1,21 @@
 <p id="notice"><%= notice %></p>
+ <div class="row">
+  <div class="col s12">
+    <div class="card">
+      <div class="card-image">
+        <%= image_tag @food_item.imgurl, alt: "#{@food_item.name}" %>
+        <span class="card-title"><%= @food_item.name %>
+        &nbsp<%= number_to_currency(@food_item.price, unit: "đ ") %></span>
+      </div>
+      <div class="card-content">
+        <p><%= @food_item.description %></p>
+      </div>
+      <div class="card-action center">
+        <a class="waves-effect waves-light btn purple"><i class="material-icons left">send</i>Order</a>
+      </div>
+    </div>
+  </div>
+</div>
 
-<p>
-  <strong>Name:</strong>
-  <%= @food_item.name %>
-</p>
 
-<p>
-  <strong>Description:</strong>
-  <%= @food_item.description %>
-</p>
 
-<p>
-  <strong>Price:</strong>
-  <%= @food_item.price %>
-</p>
-
-<p>
-  <strong>Section:</strong>
-  <%= @food_item.section %>
-</p>
-
-<p>
-  <strong>Imgurl:</strong>
-  <%= @food_item.imgurl %>
-</p>
-
-<%= link_to 'Edit', edit_food_item_path(@food_item) %> |
-<%= link_to 'Back', food_items_path %>

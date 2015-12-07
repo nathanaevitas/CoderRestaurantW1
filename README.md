@@ -41,7 +41,7 @@ The following **required** functionality is complete:
 
 Here's a walkthrough of implemented user stories:
 
-![Video Walkthrough](http://myphamdongy.net/RORBlogAppDemo.gif)
+![Video Walkthrough](http://myphamdongy.net/appdemo.gif)
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 

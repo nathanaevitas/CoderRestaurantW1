@@ -1,15 +1,130 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  name: MyString
-  description: MyText
-  price: 1
-  section: MyString
-  imgurl: MyString
+  name: "Beef Noodle"
+  description: "Special beef noodle with Japanese beef"
+  price: 56000
+  section: "Breakfast"
+  imgurl: "http://loremflickr.com/320/240/beefnoodle"
 
 two:
-  name: MyString
-  description: MyText
-  price: 1
-  section: MyString
-  imgurl: MyString
+  name: "Chiken Noodle"
+  description: "Chicken noodle from Vietnamese famers"
+  price: 60000
+  section: "Breakfast"
+  imgurl: "http://loremflickr.com/320/240/chickennoodle"
+
+three:
+  name: "Fried Rice"
+  description: "Friced Rice Chinese Style"
+  price: 100000
+  section: "Lunch"
+  imgurl: "http://loremflickr.com/320/240/friedrice"
+
+four:
+  name: "Bread with Meat"
+  description: "Classic bread with meat and veggies"
+  price: 35000
+  section: "Breakfast"
+  imgurl: "http://loremflickr.com/320/240/breadandmeat"
+
+five:
+  name: "Bread with Egg"
+  description: "Classic bread with eggs for better price"
+  price: 35000
+  section: "Breakfast"
+  imgurl: "http://loremflickr.com/320/240/breadandeggs"
+
+six:
+  name: "Bread with Egg"
+  description: "Classic bread with eggs for better price"
+  price: 35000
+  section: "Breakfast"
+  imgurl: "http://loremflickr.com/320/240/breadandeggs"
+#lunch
+seven:
+  name: "Croque Monsieur"
+  description: "toasted ham &amp; cheese sandwiche"
+  price: 115000
+  section: "Lunch"
+  imgurl: "http://loremflickr.com/320/240/CroqueMonsieur"
+eight:
+  name: "Pulled Pork Burger"
+  description: "w/ BBQ onions, mushroom &amp; eggs"
+  price: 140000
+  section: "Lunch"
+  imgurl: "http://loremflickr.com/320/240/PulledPorkBurger"
+nine:
+  name: "Linguini"
+  description: " w/ seared baby squid, clams, garlic, parsley, chilli &amp; pancetta"
+  price: 170000
+  section: "Lunch"
+  imgurl: "http://loremflickr.com/320/240/Linguini"
+ten:
+  name: "Farfalle Pasta"
+  description: "w/ caramelised onion, zucchini, tomato, red pepper, basil, pinenuts &amp; cheese"
+  price: 155000
+  section: "Lunch"
+  imgurl: "http://loremflickr.com/320/240/FarfallePasta"
+#dinner
+eleven:
+  name: "Smoked Salmon Salad "
+  description: "- w/ capers, onions &amp; crème fraîche"
+  price: 195000
+  section: "Dinner"
+  imgurl: "http://loremflickr.com/320/240/SalmonSalad "
+twelve:
+  name: "Grilled Vegetable Salad"
+  description: "- w/ feta cheese"
+  price: 105000
+  section: "Dinner"
+  imgurl: "http://loremflickr.com/320/240/VegetableSalad"
+thirteen:
+  name: "Caesar Salad"
+  description: "- w/ grilled chicken, crispy ham, crouton &amp; egg"
+  price: 170000
+  section: "Dinner"
+  imgurl: "http://loremflickr.com/320/240/CaesarSalad"
+fourteen:
+  name: "Steamed Chicken Salad"
+  description: "- w/ chilli, peanuts, shredded kohlrabi &amp; cabbage"
+  price: 130000
+  section: "Dinner"
+  imgurl: "http://loremflickr.com/320/240/ChickenSalad"
+fifteen:
+  name: "Vegetarian Onion"
+  description: "- w/ orange, olive, cucumber &amp; feta cheese"
+  price: 120000
+  section: "Dinner"
+  imgurl: "http://loremflickr.com/320/240/VegetarianOnion"
+#Drinks
+sixteen:
+  name: "Pressed Juices"
+  description: "- watermelon, carrot pomelo, pineapple, tomato, passion fruit"
+  price: 65000
+  section: "Drinks"
+  imgurl: "http://loremflickr.com/320/240/PressedJuices"
+seventeen:
+  name: "Sunrise Smoothie"
+  description: "mango, banana, yoghurt &amp; berries"
+  price: 95000
+  section: "Drinks"
+  imgurl: "http://loremflickr.com/320/240/Smoothie"
+eighteen:
+  name: "mixed fruits"
+  description: "mango, passion fruit and yoghurt"
+  price: 105000
+  section: "Drinks"
+  imgurl: "http://loremflickr.com/320/240/fruits"
+nineteen:
+  name: "Soft Drinks"
+  description: "Coke, Diet Coke, Soda, 7-up"
+  price: 45000
+  section: "Drinks"
+  imgurl: "http://loremflickr.com/320/240/SoftDrinks"
+twenty:
+  name: "Beers"
+  description: "Heineken , Tiger, Saigon Special, Huda"
+  price: 60000
+  section: "Drinks"
+  imgurl: "http://loremflickr.com/320/240/Beers"

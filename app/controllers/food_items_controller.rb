@@ -1,13 +1,16 @@
-class FoodItemsController < ApplicationController  
+class FoodItemsController < ApplicationController 
+  helper_method :sort_column, :sort_direction 
   before_action :set_food_item, only: [:show, :edit, :update, :destroy]
   
-
-
   # GET /food_items
   # GET /food_items.json
   def index
-    @food_items = FoodItem.all
+    @food_items = FoodItem.where(nil)
     @food_items = @food_items.section(params[:section]) if params[:section].present?
+    @food_items = FoodItem.order(sort_column + ' ' + sort_direction)
+    # @food_items = @food_items.azorder if params["az"].present?
+    # # @food_items = @food_items.low2highprice
+    # @food_items = @food_items.high2low if params["h2l"].present?
   end
 
   # GET /food_items/1
@@ -73,5 +76,14 @@ class FoodItemsController < ApplicationController
     # Never trust parameters from the scary internet, only allow the white list through.
     def food_item_params
       params.require(:food_item).permit(:name, :description, :price, :section, :imgurl)
+    end
+    
+    # to sanitize the params input for sorting logic
+    def sort_column
+      FoodItem.column_names.include?(params[:sort]) ? params[:sort] : 'name' 
+    end
+
+    def sort_direction
+      %w[desc asc].include?(params[:direction]) ? params[:direction] : "asc"      
     end
 end

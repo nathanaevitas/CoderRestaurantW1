@@ -1,3 +1,21 @@
 // Place all the styles related to the FoodItems controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+	a.current {
+		padding-right: 40px;
+		background-repeat: no-repeat;
+		background-position: right center;
+	}
+		
+	a.asc {
+		background-image: image-url("up.png")
+	}
+	a.desc {
+		background-image: image-url("down.png")
+	}
+	
+	
+	
+
+	

@@ -21,10 +21,10 @@
     <table class="striped">
     <thead>
       <tr>
-        <th>Name</th>
+        <th><%= sortable "name", "Dish" %></th>
         <th>Description</th>
-        <th>Price</th>
-        <th>Section</th>
+        <th><%= sortable "price", "Price" %></th>
+        <th><%= sortable "section", "Section" %></th>
         <th>Picture</th>        
       </tr>
     </thead>
@@ -34,7 +34,7 @@
         <tr>
           <td><%= food_item.name %></td>
           <td><%= food_item.description %></td>
-          <td><%= food_item.price %></td>
+          <td><%= number_to_currency food_item.price, unit: "đ " %></td>
           <td><%= food_item.section %></td>
           <td><%= image_tag food_item.imgurl %></td>
          <!--  <td><%= link_to 'Show', food_item %></td>
